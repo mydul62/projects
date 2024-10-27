@@ -135,7 +135,7 @@ header {
 .user-menu {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 
 .user-menu a {
@@ -313,10 +313,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 2px solid #c29dd6;
+  border: 1px solid #c29dd6;
   border-radius: 4px;
   padding: 20px;
-  background-color: #875fbc15;
+  background-color: #F9F0FF;
   color: #875fbc;
   font-family: Arial, sans-serif;
   font-size: 16px;

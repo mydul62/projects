@@ -84,8 +84,8 @@ header {
   align-items: center;
   flex-grow: 1;
   height: 40px;
+  margin-left: 5px;
   width: 310px;
-  margin: 0 20px;
 }
 
 .search-icon {
@@ -98,11 +98,10 @@ header {
 
 .search-input {
   width: 100%;
-  padding: 8px 35px;
+  padding: 10px 35px;
   border: none;
   outline: none;
   font-size: 14px;
-  width: 100%;
   height: auto;
   border-radius: 2px;
   color: rgb(255, 255, 255);
@@ -110,28 +109,40 @@ header {
 }
 .search-input:focus {
   background: white;
+  color: #000;
 }
-
-.search-input::placeholder {
+::placeholder {
   color: white;
 }
+.search-input:focus::placeholder {
+  color: #000;
+}
 
+
+.search-icon{
+opacity: 30%;
+font-size: 18px;
+}
 .menu {
   display: flex;
   list-style: none;
-  gap: 15px;
+
 }
 
 .menu li a {
-  background-color: transparent;
-  padding: 19px 14px;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-weight: 600;
-  text-shadow: transparent 1px 0px 0px;
-  transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
+    background-color: transparent;
+    padding: 19px 16px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: transparent 1px 0px 0px;
+    transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
+}
+.menu li a:hover{
+  flex: 1 0 auto;
+  background-color: #05396d33;
+}
 .user-menu {
   display: flex;
   align-items: center;
@@ -313,10 +324,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 2px solid #c29dd6;
+  border: 1px solid #c29dd6;
   border-radius: 4px;
   padding: 20px;
-  background-color: #875fbc15;
+  background-color: #F9F0FF;
   color: #875fbc;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -340,9 +351,11 @@ main {
 }
 
 .ticket-status h4 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
+    font-weight: 600;
+    color: #904eba;
+    font-size: 14px;
+    display: inline-flex;
+
 }
 
 .ticket-status p {
@@ -917,7 +930,12 @@ button:hover {
   font-family: Arial, sans-serif;
 }
 .dropdown a {
-  padding: 15px 0;
+    padding: 19px 8px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: transparent 1px 0px 0px;
+    transition: 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 /********************* Button styling ****************/
 

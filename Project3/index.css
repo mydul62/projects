@@ -408,11 +408,11 @@ main {
 }
 .styles__item--17Ov3 {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 10px;
   margin-left: -25px;
 }
-.footer-buttons .cancel-btn {
+.cancel-btn {
   background-color: transparent;
   text-transform: none;
   max-width: 110px;
@@ -423,28 +423,12 @@ main {
   border-radius: 4px;
   transition: background-color 1s ease-out;
 }
-.footer-buttons .continue-btn {
-  background-color: transparent;
-  text-transform: none;
-  max-width: 110px;
-  color: rgb(2, 108, 223);
-  font-size: 14px;
-  font-weight: 600;
-  padding: 10px 30px;
-  background: rgba(2, 109, 223, 0.266);
-  border-radius: 4px;
-  transition: background-color 1s ease-out;
-}
-.ticket-buttons button:hover {
+
+
+.cancel-btn:hover {
   background: rgba(2, 109, 223, 0.266);
 }
-.footer-buttons .cancel-btn:hover {
-  background: rgba(2, 109, 223, 0.266);
-}
-.footer-buttons  .selected-btn {
-  background: rgb(2, 109, 223) !important;
-  color: white  !important;
-}
+
 .step {
   display: flex;
   align-items: center;
@@ -494,12 +478,10 @@ main {
   line-height: 1.4;
   font-weight: 400;
 }
-.footer-buttons{
-border: none;
-}
+
 .ticket-select-card {
   display: flex;
-  align-items: start;
+  align-items: center;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   padding: 24px;
@@ -508,9 +490,7 @@ border: none;
   max-width: 100%;
   transition: box-shadow 0.3s ease;
 }
-.ticket-checkbox{
-margin-top: 5px;
-}
+
 .tickit-name {
   display: flex;
   flex-direction: column;
@@ -1085,6 +1065,105 @@ footer {
   text-align: center;
 }
 
+/* form  */
+
+.form-wrapper {
+  width: 70%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: rgb(38, 38, 38);;
+}
+
+.recipient-form .input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.recipient-form .form-field {
+  flex: 1;
+}
+
+.recipient-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: rgb(38, 38, 38);
+}
+
+.recipient-form input[type="text"],
+.recipient-form input[type="email"],
+.recipient-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.recipient-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.full-width {
+  position: relative;
+}
+
+.char-counter {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+    margin-top: 48px;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 24px;
+
+}
+
+.cancel-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  text-decoration: underline;
+}
+
+.send-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
 /* Mobile Styles (up to 767px) */
 @media (max-width: 991px) {
   .nav-link,
@@ -1171,7 +1250,7 @@ footer {
   }
   .ticket-select-card {
     display: flex;
-    align-items: start;
+    align-items: start ;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     padding: 24px;
@@ -1194,5 +1273,11 @@ footer {
   }
   .container {
     margin: 0;
+  }
+  .form-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
+    border-radius: 4px;
   }
 }

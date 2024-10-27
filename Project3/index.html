@@ -66,7 +66,7 @@
       <a href="https://www.ticketmaster.com/user/orders">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0H0v24h24z"></path><path fill="#fff" fill-opacity=".65" fill-rule="nonzero" d="M10.773 20.738a.75.75 0 0 1-1.106 1.013L1.197 12.5a.75.75 0 0 1 0-1.013l8.47-9.243a.75.75 0 1 1 1.106 1.014l-8.006 8.736 8.006 8.745z"></path></g></svg>
       </a>
-      <h3>Event Details</h3>
+      <h3>Select Tickets to Send</h3>
       <div></div>
       </div>
   </nav>
@@ -126,7 +126,7 @@
   <main>
   <div class="nav-link ">
    <ul>
-   <li><a href=""><span>My Accoun</span> <span  class="arrow"><i width="1" class="fa-solid fa-chevron-right"></i></span></a></li>
+   <li><a href=""><span>My Accoun</span> <span  class="arrow"><i width="" class="fa-solid fa-chevron-right"></i></span></a></li>
    <li><a href=""><span>My Events</span> <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span></a></li>
    <li><a href=""><span>Event Details</span> <span class="arrow"><i class="fa-solid fa-chevron-right"></i></span></a></li>
    </ul>
@@ -177,6 +177,7 @@
                 </a>
             </div>
             </div>
+            
         </div>
     </div>
     <div>
@@ -190,6 +191,16 @@
         <img src="./images/sms.png" alt="">
       </a>
     </div>
+    <div class="support-center">
+      <h2>Support Center</h2>
+      <p class="faq-heading">Frequently Asked Questions</p>
+      <ul class="faq-list">
+          <li><a href="#">What is a ticket transfer?</a></li>
+          <li><a href="#">What does a transfer pending mean?</a></li>
+          <li><a href="#">Can I cancel my ticket transfer?</a></li>
+          <li><a href="#">See All FAQs</a></li>
+      </ul>
+  </div>
     </div>
     <div class="right-site">
      
@@ -205,43 +216,59 @@
    
       <div class="ticket-container">
         <div class="ticket-actions">
-          <div class="ticket-action" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">
-           <img src="./images/transfer.png" alt="">
-           <span> <a style="color: #026cdf;" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/transfer">Transfer Tickets</a></span>
-          </div>
-          <div class="ticket-action" href="#">
-           <img src="./images/rotet.png" alt="">
-           <span><a style="color: #026cdf;" href="https://my.ticketmaster.com/order/Z7IVgZOxvZ16kv4JAxd/sell"> Sell Tickets</a></span>
-          </div>
-        </div>
+          <span class="step">
+              <span>
+                  <span>1.</span>
+                  <span>Select Tickets to Send</span>
+              </span>
+              <span class="chevron">
+                  <img src="./images/arrow-left.png" alt="">
+              </span>
+          </span>
+          <span class="step">
+              <span class="enter-details">
+                  <span>2.</span>
+                  <span>Enter Recipient Details</span>
+              </span>
+          </span>
+      </div>
         <div>
         </div>
        <div>
         <div class="ticket-details">
-          <h3>My SafeTix™ (1)</h3>
+          <h3>Selected Tickets(1)</h3>
           <div class="map">
-            <span><img src="./images/location2.png" alt=""></span>
-            <p><a href="">View map</a></p>
           </div>
         </div>
-       <ul>
-        <li class="styles__item--17Ov3">
-        <img src="./images/card.png" alt="">
-          <h4>Sec GA2, (General Admission)</h4>
-          </li>
-        <li class="styles__item--17Ov3">
-          <img src="./images/card.png" alt="">
-          <h4>Sec GA2, (General Admission)</h4>
-          </li>
-        <li class="styles__item--17Ov3">
-          <img src="./images/card.png" alt="">
-          <h4>Sec GA2, (General Admission)</h4>
-          </li>
-       </ul>
-        <p class="footer-text">
-          Can't find something you've purchased? Check your order confirmation email or 
-          <a href="https://www.ticketmaster.com/user/orders">View Your Orders</a>.
-        </p>
+        <div class="ticket-buttons">
+         <button>Select All</button>
+         <button>Deselect All</button>
+        </div>
+        <ul class="">
+          <li class="ticket-select-card">
+            <input type="checkbox" class="ticket-checkbox" />
+            <div class="ticket-content">
+                <span class="ticket-section">
+                    <svg class="icon" aria-hidden="true" focusable="false">
+                        <use xlink:href="#icon-symbol"></use> <!-- Replace with the appropriate SVG icon reference -->
+                    </svg>
+                    <div class="tickit-name">
+                      <div class="styles__item--17Ov3">
+                        <img src="./images/card.png" alt="">
+                          <h4>Sec GA2, (General Admission)</h4>
+                      </div>
+                      <a href="#" class="ticket-id">Ticket #7883</a>
+                    </div>
+                </span>
+                
+            </div>
+        </li>
+      
+        </ul>
+        <div class="footer-buttons">
+          <button class="cancel-btn">Cancel</button>
+          <button class="continue-btn selected-btn">Continue</button>
+        </div>
       </div>
        </div>
       </div>

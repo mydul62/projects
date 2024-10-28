@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./index2.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -234,42 +234,76 @@
       </div>
         <div>
         </div>
-       <div>
-        <div class="ticket-details">
-          <h3>Selected Tickets(1)</h3>
-          <div class="map">
-          </div>
-        </div>
-        <div class="ticket-buttons">
-         <button>Select All</button>
-         <button>Deselect All</button>
-        </div>
-        <ul class="">
-          <li class="ticket-select-card">
-            <input type="checkbox" class="ticket-checkbox" />
-            <div class="ticket-content">
-                <span class="ticket-section">
-                    <svg class="icon" aria-hidden="true" focusable="false">
-                        <use xlink:href="#icon-symbol"></use> <!-- Replace with the appropriate SVG icon reference -->
-                    </svg>
-                    <div class="tickit-name">
-                      <div class="styles__item--17Ov3">
-                        <img src="./images/card.png" alt="">
-                          <h4>Sec GA2, (General Admission)</h4>
-                      </div>
-                      <a href="#" class="ticket-id">Ticket #7883</a>
-                    </div>
-                </span>
-                
+
+
+  <!-- Initial Ticket Selection Section -->
+<div id="ticket-section" class="section">
+  <div class="ticket-details">
+    <h3>Selected Tickets (<span id="selected-count">0</span>)</h3>
+    <div class="map"></div>
+  </div>
+  <div class="ticket-buttons">
+    <button id="select-all">Select All</button>
+    <button id="deselect-all">Deselect All</button>
+  </div>
+  <ul class="ticket-list">
+    <li class="ticket-select-card">
+      <input type="checkbox" class="ticket-checkbox" />
+      <div class="ticket-content">
+        <span class="ticket-section">
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#icon-symbol"></use>
+          </svg>
+          <div class="ticket-name">
+            <div class="styles__item--17Ov3">
+              <img src="./images/card.png" alt="">
+              <h4>Sec GA2, (General Admission)</h4>
             </div>
-        </li>
-      
-        </ul>
-        <div class="footer-buttons">
-          <button class="cancel-btn">Cancel</button>
-          <button class="continue-btn selected-btn">Continue</button>
+            <a href="#" class="ticket-id">Ticket #7883</a>
+          </div>
+        </span>
+      </div>
+    </li>
+    <!-- Repeat similar list items as needed -->
+  </ul>
+  <div class="footer-buttons">
+    <button class="cancel-btn">Cancel</button>
+    <button class="continue-btn" id="continue-btn">Continue</button>
+  </div>
+</div>
+
+<!-- New Form Section (Initially Hidden) -->
+<div id="form-section" class="section" style="display: none;">
+  <div class="form-wrapper">
+    <h2>Recipient Details</h2>
+    <form class="recipient-form">
+      <div class="input-group">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" />
         </div>
       </div>
+      <div class="form-field full-width">
+        <label for="note">Add a Note (Optional)</label>
+        <textarea id="note" maxlength="400"></textarea>
+        <span class="char-counter">400/400</span>
+      </div>
+    </form>
+  </div>
+  <div class="button-group">
+    <button type="button" class="cancel-btn">Cancel</button>
+    <button type="submit" class="send-btn">Send</button>
+  </div>
+</div>
+
+
+
+
+        
        </div>
       </div>
         <div class="offer-container">
@@ -405,6 +439,6 @@
       <p class="sm-footer">By continuing past this page, you agree to our <a class="term-and-cond" style="text-decoration: none;" href="https://help.ticketmaster.com/hc/en-us/articles/10468830739345-Terms-of-Use?_gl=1*eqb5wn*_gcl_au*ODU0MTUxNTYzLjE3Mjk4Nzg2NDc.*_ga*MTU1MTY3ODYxMC4xNzI5ODc4NjQ4*_ga_C1T806G4DF*MTcyOTk4NzM0Ni45LjEuMTcyOTk5Mjc3MS4yOC4wLjA.*_ga_H1KKSGW33X*MTcyOTk4OTYzNy4xMS4xLjE3Mjk5OTI3NzEuMjguMC4w">Terms of Use</a> <a class="manage-cookie" style="text-decoration: none;" href="https://help.ticketmaster.com/hc/en-us/articles/10468830739345-Terms-of-Use?_gl=1*7xxk8z*_gcl_au*ODU0MTUxNTYzLjE3Mjk4Nzg2NDc.*_ga*MTU1MTY3ODYxMC4xNzI5ODc4NjQ4*_ga_C1T806G4DF*MTcyOTk4NzM0Ni45LjEuMTcyOTk5MzIzNS4zOC4wLjA.*_ga_H1KKSGW33X*MTcyOTk4OTYzNy4xMS4xLjE3Mjk5OTMyMzUuMzguMC4w">Manage my cookies and ad choices</a>.</p>
     </div>
   </footer>
-  <script src="./index.js"></script>
+  <script src="./index2.js"></script>
 </body>
 </html>

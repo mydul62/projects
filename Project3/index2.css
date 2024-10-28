@@ -412,7 +412,6 @@ main {
   display: flex;
   justify-content: end;
   align-items: center;
-  border-top: 1px solid #ebebeb;
   padding: 40px;
   gap: 50px;
 }
@@ -453,9 +452,12 @@ main {
   text-transform: capitalize;
   border-radius: 2px;
   cursor: pointer;
-  background: rgba(2, 109, 223, 0.266);
+  background: rgba(2, 109, 223, 0.108);
   border: 1px solid transparent;
 
+}
+.continue-btn:hover{
+  background: rgba(2, 109, 223, 0.266);
 }
 .continue-btn-selected{
 background-color: rgb(2, 108, 223);
@@ -515,13 +517,16 @@ background-color: rgb(2, 108, 223);
   line-height: 1.4;
   font-weight: 400;
 }
+.ticket-list{
+  border: 1px solid #e0e0e0;
+  margin: 0 20px;
 
+}
 .ticket-select-card {
   display: flex;
   align-items: start;
-  border: 1px solid #e0e0e0;
   border-radius: 4px;
-  padding: 24px;
+  padding: 24px 0;
   margin: 0 24px;
   background-color: white;
   max-width: 100%;
@@ -1212,6 +1217,22 @@ h2 {
 
 .send-btn:hover {
   background-color: #0056b3;
+}
+
+
+/* layout chage effect style  */
+
+ /* Fade Transition Styles */
+ .section {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  display: block;
+  opacity: 1;
 }
 
 /* Mobile Styles (up to 767px) */

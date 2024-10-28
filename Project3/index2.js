@@ -26,7 +26,7 @@ $(document).ready(function() {
       setTimeout(function() {
         $('#ticket-section').hide();
         $('#form-section').fadeIn(500).addClass('fade-in');
-      }, 500); // Adjust delay to match transition time
+      }, 500);
     }
   });
 });

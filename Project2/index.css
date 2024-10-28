@@ -418,11 +418,26 @@ main {
   border: none;
   padding: 0;
 }
+.card-list-container {
+  padding: 0 20px; /* Add padding inside the container */
+}
+
+.card-list {
+  width: 100%;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 1px 1px 0px;
+  border: 1px solid rgb(235, 235, 235);
+  margin: 0; /* Remove margin to prevent overflow */
+}
+
 .styles__item--17Ov3 {
   display: flex;
   align-items: center;
+  padding: 20px 10px;
   gap: 10px;
 }
+
 .ticket-details {
   display: flex;
   justify-content: space-between;
@@ -435,11 +450,7 @@ main {
   line-height: 1.4;
   font-weight: 400;
 }
-.styles__item--17Ov3 {
-  padding: 20px;
-  margin: 0 24px;
-  border: 1px solid #ebebeb;
-}
+
 .ticket-details span {
   color: #555;
 }

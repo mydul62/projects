@@ -66,7 +66,7 @@
       <a href="https://www.ticketmaster.com/user/orders">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0H0v24h24z"></path><path fill="#fff" fill-opacity=".65" fill-rule="nonzero" d="M10.773 20.738a.75.75 0 0 1-1.106 1.013L1.197 12.5a.75.75 0 0 1 0-1.013l8.47-9.243a.75.75 0 1 1 1.106 1.014l-8.006 8.736 8.006 8.745z"></path></g></svg>
       </a>
-      <h3>Select Tickets to Send</h3>
+      <h3>Enter Recipient Details</h3>
       <div></div>
       </div>
   </nav>
@@ -235,41 +235,32 @@
         <div>
         </div>
        <div>
-        <div class="ticket-details">
-          <h3>Selected Tickets(1)</h3>
-          <div class="map">
-          </div>
-        </div>
-        <div class="ticket-buttons">
-         <button>Select All</button>
-         <button>Deselect All</button>
-        </div>
-        <ul class="">
-          <li class="ticket-select-card">
-            <input type="checkbox" class="ticket-checkbox" />
-            <div class="ticket-content">
-                <span class="ticket-section">
-                    <svg class="icon" aria-hidden="true" focusable="false">
-                        <use xlink:href="#icon-symbol"></use> <!-- Replace with the appropriate SVG icon reference -->
-                    </svg>
-                    <div class="tickit-name">
-                      <div class="styles__item--17Ov3">
-                        <img src="./images/card.png" alt="">
-                          <h4>Sec GA2, (General Admission)</h4>
-                      </div>
-                      <a href="#" class="ticket-id">Ticket #7883</a>
-                    </div>
-                </span>
-                
+        <div class="form-wrapper">
+          <h2>Recipient Details</h2>
+          <form class="recipient-form">
+            <div class="input-group">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" >
+              </div>
+              <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" >
+              </div>
             </div>
-        </li>
-      
-        </ul>
-        <div class="footer-buttons">
-          <button class="cancel-btn">Cancel</button>
-          <button class="continue-btn selected-btn">Continue</button>
+            <div class="form-field full-width">
+              <label for="note">Add a Note (Optional)</label>
+              <textarea id="note"  maxlength="400"></textarea>
+              <span class="char-counter">400/400</span>
+            </div>
+            
+          </form>
+         
         </div>
-      </div>
+         <div class="button-group">
+            <button type="button" class="cancel-btn">Cancel</button>
+            <button type="submit" class="send-btn">Send</button>
+          </div>
        </div>
       </div>
         <div class="offer-container">

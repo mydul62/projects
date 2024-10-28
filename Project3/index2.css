@@ -242,13 +242,15 @@ main {
 }
 
 .event-details-title {
-  padding: 25px;
+  padding:0 20px;
 }
 
 .event-details-title h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 10px 0;
-  font-weight: 600;
+  font-weight: 500;
+  color: rgb(38, 38, 38);
+
 }
 
 .event-info {
@@ -276,7 +278,12 @@ main {
 .event-info a i {
   color: #555;
 }
-
+.cart-line{
+    box-sizing: content-box;
+    height: 0;
+    margin-top: 24px;
+    opacity: 0.4;
+}
 .event-info a {
   text-decoration: none;
   color: #007bff;
@@ -286,7 +293,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 .share-you-001 {
   display: none;
@@ -335,13 +342,10 @@ main {
 .title-stutus-bottom {
   display: flex;
   justify-content: start;
+  align-items: center;
   gap: 20px;
-  margin-bottom: 20px;
 }
-.title-stutus-bottom img {
-  margin-top: -5px;
-  margin-right: -15px;
-}
+
 
 .ticket-status i {
   font-size: 30px;
@@ -359,7 +363,10 @@ main {
 }
 
 .ticket-status p {
-  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  
 }
 
 /* tickit action  */
@@ -406,7 +413,7 @@ main {
   justify-content: end;
   align-items: center;
   border-top: 1px solid #ebebeb;
-  padding: 24px;
+  padding: 40px;
   gap: 50px;
 }
 .ticket-buttons button {
@@ -437,7 +444,22 @@ main {
   transition: background-color 1s ease-out;
 }
 
+.continue-btn{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.43;
+  padding: 0px 20px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  background: rgba(2, 109, 223, 0.266);
+  border: 1px solid transparent;
 
+}
+.continue-btn-selected{
+background-color: rgb(2, 108, 223);
+}
 .cancel-btn:hover {
   background: rgba(2, 109, 223, 0.266);
 }
@@ -454,6 +476,8 @@ main {
 .step span {
   display: flex;
   align-items: center;
+  font-weight:600 ;
+  font-size: 16px;
 }
 
 .chevron {
@@ -494,7 +518,7 @@ main {
 
 .ticket-select-card {
   display: flex;
-  align-items: center;
+  align-items: start;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
   padding: 24px;
@@ -503,7 +527,9 @@ main {
   max-width: 100%;
   transition: box-shadow 0.3s ease;
 }
-
+.ticket-checkbox{
+margin-top: 5px;
+}
 .tickit-name {
   display: flex;
   flex-direction: column;
@@ -943,7 +969,7 @@ button:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 53px;
+  top: 55px;
   right: 50px;
   background-color: white;
   min-width: 240px;
@@ -955,11 +981,17 @@ button:hover {
 
 /* Individual item styling */
 .dropdown-content li a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    padding: 0px 12px;
+    height: 36px;
+    display: flex;
+    color: rgb(31, 38, 45);
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 2px;
+    text-decoration: none;
 }
+
 
 /* Hover effect for items */
 .dropdown-content li a:hover {
@@ -1138,8 +1170,8 @@ h2 {
 
 .char-counter {
   position: absolute;
-  bottom: 8px;
-  right: 10px;
+  top: 100%;
+  right: 0;
   font-size: 12px;
   color: #777;
 }
@@ -1248,9 +1280,18 @@ h2 {
     text-align: center;
     color: rgb(255, 255, 255);
   }
+  .title-stutus-bottom{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  }
   .title-stutus-bottom img {
     width: 70px;
     height: 70px;
+  }
+  .title-stutus-bottom p{
+  font-size: 40px;
+  color: #262626;
   }
   .ticket-container {
     margin-top: 0;
